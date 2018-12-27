@@ -31,5 +31,9 @@ def bulk_tweet_shortener(arr)
 end
 
 def selective_tweet_shortener(tweet)
-  if tweet.length 
+  if tweet > 140
+    word_substiter(tweet)
+  else
+    return tweet
+  end
 end
