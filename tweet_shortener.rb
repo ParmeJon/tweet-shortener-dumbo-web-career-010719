@@ -41,6 +41,6 @@ end
 def shortened_tweet_truncator(tweet)
   shortened_tweet = word_substituter(tweet)
   if shortened_tweet.chars.length > 140
-    return shortened_tweet[0..136]
+    return shortened_tweet[0..136] << "..."
   end
   
